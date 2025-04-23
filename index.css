@@ -8,6 +8,15 @@
     --fallback-color: var(--not-defined-color, pink);
 }
 
+@font-face {
+    font-family: "Comfortaa";
+    src: url(fonts/Comfortaa-Regular.ttf);
+}
+
+html {
+    font-family: "Comfortaa";
+}
+
 body {
     background-color: var(--main-bg-color);
     color: var(--main-content-color);
