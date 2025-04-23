@@ -85,3 +85,16 @@ ul li {
     justify-self: center;
     align-self: center;
 }
+
+/* I know this is most definitely not best practice, but just for show :P */
+b.underline {
+    text-decoration: underline;
+}
+
+ul > li ~ li {
+    text-decoration: line-through;
+}
+
+*[foo] {
+    text-align: center;
+}
