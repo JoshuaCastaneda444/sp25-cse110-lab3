@@ -156,3 +156,9 @@ section > button {
 section > button:active {
     background-color: red;
 }
+
+p {
+    em {
+        color: red;
+    }
+}
