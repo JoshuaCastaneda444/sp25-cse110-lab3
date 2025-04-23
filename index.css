@@ -102,3 +102,9 @@ ul > li ~ li {
 #registration_form {
     display: none;
 }
+
+h1, h2 {
+    width: 100%;
+    /* don't want to change it too much */
+    height: 1em;
+}
