@@ -108,3 +108,11 @@ h1, h2 {
     /* don't want to change it too much */
     height: 1em;
 }
+
+#absolute_test { 
+    position: absolute; 
+    inset-inline-start: 40px; 
+    inset-block-start: 40px; 
+    border: 1px solid red; 
+    border-radius: 5px;
+}
