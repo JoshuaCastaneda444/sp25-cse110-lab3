@@ -129,3 +129,12 @@ h1, h2 {
 #absolute_test:hover {
     display: none;
 }
+
+section > button {
+    width: 100%;
+    height: 50px;
+}
+
+section > button:active {
+    background-color: red;
+}
