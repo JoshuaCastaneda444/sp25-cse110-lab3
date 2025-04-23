@@ -1,0 +1,13 @@
+:root {
+    --main-bg-color: #F6F1DE;
+    --main-content-color: rgb(62, 63, 91);
+    --primary-color: hsl(162, 21%, 62%);
+    --secondary-color: color(srgb 0.67451 0.82745 0.65882 / 1.0);
+    --tertiary-color: firebrick;
+    --mix-color: color-mix(in oklab, #A71E14 50%, white);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-content-color);
+}
