@@ -59,6 +59,13 @@ ul li {
     padding-right: 1mm;
 }
 
+.activity {
+    padding-top: 1mm;
+    padding-bottom: 1mm;
+    padding-left: 1mm;
+    padding-right: 1mm;
+}
+
 #nana {
     max-width: 75%;
     max-height: 75%;
@@ -101,6 +108,10 @@ b.underline {
 }
 
 ul > li ~ li {
+    text-decoration: line-through;
+}
+
+ol > li + li {
     text-decoration: line-through;
 }
 
