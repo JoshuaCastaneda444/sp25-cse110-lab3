@@ -19,12 +19,22 @@ main {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    margin: auto;
 }
 
 #media {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+main > section {
+    width: 100%;
+    max-width: 800px;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #nana {
