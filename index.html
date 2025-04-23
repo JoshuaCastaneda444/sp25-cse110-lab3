@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <link rel="icon" href="assets/cat-face.svg">
     <link rel="stylesheet" href="index.css">
+    <style>
+      @media (max-width: 1250px) {
+        #absolute_test { 
+            display: none;
+        }
+      }
+    </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="https://catoftheday.com/">Cat of the Day</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Cat">Cat Wikipedia</a></li>
-        <li><a href="https://minecraft.wiki/w/Cat">Cat Minecraft</a></li>
-      </ul>
-    </nav>
-    
     <main>
-      <h1>Plans to take over the world!!! 🐱</h1>
-      <h2>A brainstorming session</h2>
+      <h1 foo>Plans to take over the world!!! 🐱</h1>
+      <h2 foo>A brainstorming session</h2>
+      
+      <p id="absolute_test">😺</p>
       
       <section>
         <header>
@@ -42,18 +43,18 @@
           <h3>Agenda</h3>
         </header>
         <ol>
-          <li>Meow</li>
-          <li>Nap</li>
-          <li>Scratch</li>
+          <li class="activity">Meow</li>
+          <li class="activity">Nap</li>
+          <li class="activity">Scratch</li>
         </ol>
       </section>
 
-      <section>
+      <section style="display: block;">
         <header>
           <h3>Comments/Unfinished Business</h3>
         </header>
         <p>
-          meow meow meow meow meow <b>keyword</b> meow meow meow meow <strong>warning</strong> meow meow meow meow meow meow meow meow meow meow <br>
+          meow meow meow meow meow <b class="underline">keyword</b> meow meow meow meow <strong>warning</strong> meow meow meow meow meow meow meow meow meow meow <br>
           meow meow meow meow meow meow meow meow meow meow meow meow <strong>this is a sentence of great importance to the whole page</strong> meow <br>
           meow meow meow meow meow meow <b>product name</b> meow meow meow meow meow meow meow meow <i>Felis catus</i> meow meow meow meow <br>
           meow <em>MEOW</em> (with emphasis) meow meow meow <em><em>MEOW</em></em> (with even more emphasis) meow meow meow meow the cat thought, <i>cat thoughts</i> meow 
@@ -83,16 +84,17 @@
         <header>
           <h3>Media</h3>
         </header>
-        <div>
-          <img src="assets/nana.jpg" alt="Nana the cat being a menace"> <br>
-          <video controls><source src="assets/predator.mp4"></video> <br>
-          <audio controls src="assets/meow.mp3"></audio>
+        <div id="media">
+          <img src="assets/nana.jpg" alt="Nana the cat being a menace" id="nana">
+          <video controls id="predator"><source src="assets/predator.mp4"></video>
+          <img src="assets/grumpy.jpg" alt="A grumpy cat" id="grumpy">
+          <img src="assets/blackwhite.jpeg" alt="A black and white cat" id="blackwhite">
         </div>
       </section>
 
       <hr>
 
-      <section>
+      <section id="registration_form">
         <header>
           <h3>Registration Form</h3>
         </header>
@@ -149,6 +151,10 @@
             <button name="submit" type="submit">Submit!</button>
           </fieldset>
         </form>
+      </section>
+
+      <section>
+        <button>Explode</button>
       </section>
     </main>
 
