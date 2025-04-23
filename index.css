@@ -107,11 +107,18 @@ b.underline {
     text-decoration: underline;
 }
 
+/* Cross off all but first */
 ul > li ~ li {
     text-decoration: line-through;
 }
 
+/* Cross off all but first */
 ol > li + li {
+    text-decoration: line-through;
+}
+
+/* Cross off all but last */
+li:has(+ li) {
     text-decoration: line-through;
 }
 
