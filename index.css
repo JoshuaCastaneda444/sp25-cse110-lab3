@@ -1,10 +1,10 @@
 :root {
     --main-bg-color: #F6F1DE;
     --main-content-color: rgb(62, 63, 91);
-    --primary-color: hsl(162, 21%, 62%);
+    --primary-color: hsl(265, 65%, 83%);
     --secondary-color: color(srgb 0.67451 0.82745 0.65882 / 1.0);
     --tertiary-color: firebrick;
-    --mix-color: color-mix(in oklab, #A71E14 50%, white);
+    --mix-color: color-mix(in oklab, #F6F1DE 90%, black);
     --fallback-color: var(--not-defined-color, pink);
 }
 
@@ -19,12 +19,35 @@ main {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    margin: auto;
 }
 
 #media {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+main > section {
+    width: 100%;
+    max-width: 800px;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem 1rem 1rem;
+    border-style: solid;
+    background-color: var(--mix-color);
+    border-radius: 10px;
+    border-width: 1mm;
+    border-color: var(--primary-color);
+}
+
+ul li {
+    padding-top: 1mm;
+    padding-bottom: 1mm;
+    padding-left: 1mm;
+    padding-right: 1mm;
 }
 
 #nana {
