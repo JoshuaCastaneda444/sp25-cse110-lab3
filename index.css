@@ -5,6 +5,7 @@
     --secondary-color: color(srgb 0.67451 0.82745 0.65882 / 1.0);
     --tertiary-color: firebrick;
     --mix-color: color-mix(in oklab, #A71E14 50%, white);
+    --fallback-color: var(--not-defined-color, pink);
 }
 
 body {
