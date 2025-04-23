@@ -98,3 +98,7 @@ ul > li ~ li {
 *[foo] {
     text-align: center;
 }
+
+#registration_form {
+    display: none;
+}
